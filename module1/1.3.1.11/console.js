@@ -1,0 +1,11 @@
+console.log("Victor Tuy")
+console.log("1997")
+console.log(1997)
+console.log("abc","def","ghi")
+console.log("Victor Tuy (1997)")
+console.log("Victor","Tuy","(1997)")
+console.log("Victor")
+console.log("Tuy")
+console.log("(1997)")
+console.log("Victor" + " Tuy" + "(1997)");
+console.log("Victor"+"Tuy"+"(1997)")
