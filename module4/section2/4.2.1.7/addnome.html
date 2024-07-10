@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let nomes = []
+    let saiu = false
+    let listanova = ""
+
+    while (saiu == false) {
+        let newNome = prompt("Digite o nome para inserir na lista")
+        if (newNome != null) {
+            if (newNome != "") {
+                nomes.push(newNome)
+                alert("Nome adicionado")
+            } else {
+                alert("Digite um nome válido")
+            }
+        } else {
+            saiu = true
+        }
+    }
+
+    for (let i = 0; i < nomes.length; i++) {
+        listanova += `${i}: ${nomes[i]}\n`
+    }
+
+    alert(listanova)
+</script>
+
+</html>
