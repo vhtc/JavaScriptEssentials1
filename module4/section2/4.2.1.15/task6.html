@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let numero1 = Number(prompt("digite numero 1"))
+    let numero2 = Number(prompt("digite numero 2"))
+    let operacao = prompt("+, -, *, /")
+    let resultado
+    validOperacao = true
+
+    switch (operacao) {
+        case "+":
+            resultado = numero1 + numero2
+            break
+        case "-":
+            resultado = numero1 - numero2
+            break
+        case "*":
+            resultado = numero1 * numero2
+            break
+        case "/":
+            resultado = numero1 / numero2
+            break
+        case "Q":
+        case "q":
+        default:
+            validOperacao = false
+            operacao = "Q"
+    }
+    if ((numero1 == "Q") || (numero2 == "Q") || (operacao == "Q")) {
+        alert("Você saiu da operação")
+    } else {
+        validOperacao ? alert(`Resultado da operação ${numero1} ${operacao} ${numero2} = ${resultado}`) : alert("Operação inválida")
+    }
+</script>
+
+</html>

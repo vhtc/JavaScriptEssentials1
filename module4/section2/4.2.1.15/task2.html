@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="task2()">Clique para rodar</button>
+</body>
+<script>
+    function task2() {
+        let inicial = Number(prompt("Digite o valor inicial"))
+        let final = Number(prompt("Digite o valor final"))
+
+        if (inicial > final) {
+            for (let i = final; i <= inicial; i + 10) {
+                console.log(inicial)
+                inicial -= 10
+            }
+        }else{
+            alert("Valor inicial tem que ser maior que final")
+        }
+    }
+</script>
+
+</html>
+
+<!-- de 100 para 20 100 90 80 70 60 50 40 30 20 -->

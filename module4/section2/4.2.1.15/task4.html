@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="task4()">Clique para rodar</button>
+</body>
+<script>
+    function task4() {
+        let filmes = []
+
+        let continuarNoPrograma = true
+        while (continuarNoPrograma == true) {
+            let escolha = Number(prompt("1 - Cadastrar Filme\n2 - Sair"))
+            switch (escolha) {
+                case 1:
+                    let newFilme = {
+                        name: prompt("Digite o nome do Filme"),
+                        imdb: Number(prompt("Digite a avaliação IMDB").replace(',','.'))
+                    }
+                    if ((newFilme.name != "") && (newFilme.name != null)) {
+                        filmes.push(newFilme)
+                        console.log(filmes)
+                    } else {
+                        alert("Digite valores válidos")
+                    }
+                    break
+                case 2:
+                    alert("Você saiu")
+                    continuarNoPrograma = false
+                    break
+                default:
+                    alert("Digite um valor válido")
+                    continuarNoPrograma = true
+            }
+        }
+
+        console.log("Lista de filmes com nota menor que 7")
+        for (filme of filmes) {
+            if (filme.imdb < 7) {
+                console.log(`${filme.name} - ${filme.imdb} Imdb`)
+            }
+        }
+
+        console.log("Lista de Filmes com nota maior que 7")
+        for (filme of filmes) {
+            if (filme.imdb >= 7) {
+                console.log(`${filme.name} - ${filme.imdb} Imdb`)
+            }
+        }
+    }
+</script>
+
+</html>
