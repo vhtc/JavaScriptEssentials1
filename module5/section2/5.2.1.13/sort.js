@@ -11,9 +11,8 @@ let numeros = [50, 30, 10, 40, 60, 80, 20, 70, 100, 90]
 // }
 
 let sorteado = numeros.sort((a, b) => a - b)
+console.log(sorteado)
+
 
 let sorteado2 = numeros.sort((a, b) => b - a)
-
-
-console.log(sorteado)
 console.log(sorteado2)
