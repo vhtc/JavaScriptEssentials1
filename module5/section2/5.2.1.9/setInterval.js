@@ -5,7 +5,7 @@ function mostrador() {
     x++
 }
 
-contador = setInterval(mostrador, 1000)
+let contador = setInterval(mostrador, 1000)
 
 
 setTimeout(() => {
