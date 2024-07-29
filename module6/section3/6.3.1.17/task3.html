@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function max(array) {
+        let maxValue = array[1];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > maxValue) {
+                maxValue = array[i];
+                console.log("entrou")
+            }
+        }
+        return maxValue;
+    }
+
+    console.log(max([1, 4, 6, , 8, 2]));
+    console.log(max([10, 20, 4, 6, 2])); 
+</script>
+
+</html>
